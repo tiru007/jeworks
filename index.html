@@ -42,13 +42,19 @@
               <th scope="col">Device</th>
               <th scope="col">RequestedDate</th>
               <th scope="col">id</th>
+              <th scope="col">Status</th>
+              <th scope="col">Approximate Amount</th>
+              <th scope="col">Actual Amount</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="result in results">
-              <td>{{ result.Device }}</td>
-              <td>{{ result.RequestedDate }}</td>
-              <td>{{ result.id }}</td>
+              <td>{{ result.deviceName }}</td>
+              <td>{{ result.requestedDate }}</td>
+              <td>{{ result.deviceId }}</td>
+              <td>{{ result.status }}</td>
+              <td>{{ result.approximateAmount }}</td>
+              <td>{{ result.actualAmount }}</td>
             </tr>
           </tbody>
         </table>
