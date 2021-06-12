@@ -49,7 +49,18 @@
   
   <div id="app">
     <div>
-      <b-table striped hover :items="items"></b-table>
+      <b-table
+        :items="items"
+        :fields="fields"
+        :sort-by.sync="sortBy"
+        :sort-desc.sync="sortDesc"
+        responsive="sm"
+      ></b-table>
+  
+      <div>
+        Sorting By: <b>{{ sortBy }}</b>, Sort Direction:
+        <b>{{ sortDesc ? 'Descending' : 'Ascending' }}</b>
+      </div>
     </div>
 
     <!-- 
