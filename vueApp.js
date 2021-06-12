@@ -3,11 +3,11 @@ const url = "/api/getdevices";
 const vm = new Vue({
         el: '#app',
         data: {
-          results: []
+          items: []
         },
         mounted() {
           axios.get(url).then(response => {
-            this.results = response.data
+            this.items = response.data
           })
         }
       });
