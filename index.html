@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
   <link rel="stylesheet" href="styles.css">
   <title>Jagannath Engineering Works</title>
  
@@ -31,9 +32,9 @@
   </main>
   
   <div id="app">
-   <!-- <ul>
-      <li v-for="result in results">{{result.Device}}</li>
-    </ul> -->
+    <div>
+      <b-table striped hover :results="results"></b-table>
+    </div>
 
       <div>    
         <table class="table table-striped">
