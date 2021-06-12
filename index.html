@@ -33,7 +33,7 @@
   
   <div id="app">
     <div>
-      <b-table striped hover :items="items" :fields="fields"></b-table>
+      <b-table striped hover :items="items"></b-table>
     </div>
 
       <div>    
@@ -49,7 +49,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="result in items">
+            <tr v-for="result in results">
               <td>{{ result.deviceName }}</td>
               <td>{{ result.requestedDate }}</td>
               <td>{{ result.deviceId }}</td>
