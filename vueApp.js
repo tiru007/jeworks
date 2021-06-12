@@ -4,7 +4,7 @@ const vm = new Vue({
         el: '#app',
         data: {
           fields: ['deviceName', 'requestedDate', 'deviceId','status','approximateAmount','actualAmount'],
-          results: []
+          items: []
         },
         mounted() {
           axios.get(url).then(response => {
