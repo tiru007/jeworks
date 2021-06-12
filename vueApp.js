@@ -5,7 +5,7 @@ const vm = new Vue({
         data: {
           sortBy: 'status',
           sortDesc: false,
-          fields: ['deviceName', 'requestedDate', 'deviceId','status','approximateAmount','actualAmount',
+          fields: [
           { key: 'deviceName', sortable: true },
           { key: 'requestedDate', sortable: true },
           { key: 'deviceId', sortable: true },
